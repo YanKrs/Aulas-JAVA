@@ -1,0 +1,129 @@
+    int idade= 20 ;
+    double peso= 85.2 ;
+    String nome= "Paulo" ;
+    boolean sexo= true ;
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);   
+
+    String nome;
+    System.out.println("Digite seu nome: ");
+    nome = entrada.nextLine();
+
+    System.out.println("Digite sua idade: ");
+    int idade = entrada.nextInt();
+
+    System.out.println("Digite seu peso: ");
+    double peso = entrada.nextDouble();
+
+    System.out.println("Digite seu sexo: ");
+    char sexo = entrada.next().charAt(0);
+
+
+
+System.out.println("nome: "+nome+"\nidade: "+idade+"\npeso: "+peso+"\nsexo:"+sexo);                     
+          
+  }
+}
+
+
+
+
+System.out.println("nome: "+nome+"\nidade: "+idade+"\npeso: "+peso+"\nsexo:"+sexo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+System.out.println("Digite sua idade: ");
+    int idade2 = entrada.nextInt();
+
+    System.out.println("Digite seu pes: ");
+    double peso = entrada.nextDouble();
+
+    System.out.println("Digite seu sexo: ");
+    char sexo = entrada.next().charAt(0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);   
+
+    
+    System.out.println("Digite seu nome: ");
+    int val= entrada.nextInt();
+
+
+    while(val <100){
+      int num = val * 3;
+      System.out.println(num);        
+    }     
+
+
+  
+          
+  }
+}

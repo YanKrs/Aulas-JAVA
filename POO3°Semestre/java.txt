@@ -1,0 +1,34 @@
+private double valorBase;
+    private int quantidadeCavalos;
+
+    public iPVA(double valorBase, int quantidadeCavalos) {
+        this.valorBase = valorBase;
+        this.quantidadeCavalos = quantidadeCavalos;
+    }
+
+    public iPVA(){}
+
+    public double getValorBase() {
+        return valorBase;
+    }
+
+    public void setValorBase(double valorBase) {
+        this.valorBase = valorBase;
+    }
+
+    public int getQuantidadeCavalos() {
+        return quantidadeCavalos;
+    }
+
+    public void setQuantidadeCavalos(int quantidadeCavalos) {
+        this.quantidadeCavalos = quantidadeCavalos;
+    }
+    public double calcularIPVA(){
+        return valorBase*quantidadeCavalos;
+    }
+
+ 
+    public String imprimir() {
+        return "valorBase: " + valorBase +
+                ", quantidadeCavalos: " + quantidadeCavalos;
+    }

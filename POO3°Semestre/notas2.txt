@@ -1,0 +1,153 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);   
+
+    
+    System.out.println("Digite um valor: ");
+    int val= entrada.nextInt();
+
+	int acumulador = 0;
+
+    for(int i = 1; i < val; i++;){
+	acumulador += i;
+	System.out.println(acumulador)        
+    }   
+          
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    System.out.println("Digite um valor: ");
+    int val = entrada.nextInt();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite a quantidade de notas:");
+        int tamanho = sc.nextInt();
+
+        int notas[] = new int[tamanho];
+        double acumulador = 0;
+        
+        
+        for(int i = 0; i < notas.length; i++){
+            System.out.println("Digite a nota " + (i + 1) + ":");
+            
+            notas[i] = sc.nextInt();
+        }
+        
+        for(int nota : notas){
+            acumulador += nota;
+        }
+        
+        System.out.println(acumulador / notas.length);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);   
+
+    System.out.println("Digite um valor: ");
+    int val = entrada.nextInt();
+
+    int idade[] = new int[9];
+
+   for(int i = 0; i<9; i++){
+     if(i/2==1){
+       idade[i]=entrada.nextInt();
+        System.out.println(idade[i]);     
+     }
+   }
+          
+  }
+}

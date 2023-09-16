@@ -1,0 +1,49 @@
+package jogo;
+
+public class Jogador {
+	//atributos 
+		private String nome;
+		private int xp;
+		private int hp;
+		private boolean envenenado;
+		
+		public Jogador(String nome){
+			this.nome = nome;
+		}
+		
+		public Jogador(){
+			
+		}
+		
+		public int getXp() {
+			return xp;
+		}
+		
+		public int getHp() {
+			return hp;
+		}
+		
+		
+		//metodos
+		
+		public boolean isEnvenenado(){
+			return envenenado;
+		}
+		
+		public void receberDano(int pontos){
+			hp = hp - pontos;
+		}
+		
+		public void receberCura(int pontos){
+			hp = hp + pontos;
+		}
+		
+		public void ganharExperiencia(int pontos) {
+			xp = xp + pontos;
+		}
+		
+		public void receberAntidoto() {
+			envenenado = !envenenado;
+		}
+		
+}

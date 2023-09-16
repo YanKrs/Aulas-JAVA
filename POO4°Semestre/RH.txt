@@ -1,0 +1,88 @@
+// Classe abstrata Funcionario
+abstract class Funcionario {
+    private int codigo;
+    private String nome;
+    private double salarioBase;
+
+    public Funcionario(int codigo, String nome, double salarioBase) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.salarioBase = salarioBase;
+    }
+
+    public abstract double calcularSalario();
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+}
+
+// Classe Engenheiro (especialização de Funcionario)
+class Engenheiro extends Funcionario {
+    private String departamento;
+    private String crea;
+
+    public Engenheiro(int codigo, String nome, double salarioBase, String departamento, String crea) {
+        super(codigo, nome, salarioBase);
+        this.departamento = departamento;
+        this.crea = crea;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return getSalarioBase() * 1.5; // Adicional de 50%
+    }
+}
+
+// Classe Gerente (especialização de Funcionario)
+class Gerente extends Funcionario {
+    private String area;
+    private double bonus;
+
+    public Gerente(int codigo, String nome, double salarioBase, String area, double bonus) {
+        super(codigo, nome, salarioBase);
+        this.area = area;
+        this.bonus = bonus;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return getSalarioBase() + bonus;
+    }
+}
+
+// Classe Presidente (especialização final de Funcionario)
+final class Presidente extends Funcionario {
+    private double cotaAcoes;
+
+    public Presidente(int codigo, String nome, double salarioBase, double cotaAcoes) {
+        super(codigo, nome, salarioBase);
+        this.cotaAcoes = cotaAcoes;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return getSalarioBase() + cotaAcoes;
+    }
+}
+
+public class SistemaRH {
+    public static void main(String[] args) {
+        // Exemplo de uso das classes
+        Funcionario engenheiro = new Engenheiro(1, "João", 3000.0, "Engenharia", "12345");
+        Funcionario gerente = new Gerente(2, "Maria", 4000.0, "TI", 1000.0);
+        Funcionario presidente = new Presidente(3, "Carlos", 5000.0, 2000.0);
+
+        System.out.println("Salário do Engenheiro: " + engenheiro.calcularSalario());
+        System.out.println("Salário do Gerente: " + gerente.calcularSalario());
+        System.out.println("Salário do Presidente: " + presidente.calcularSalario());
+    }
+}
