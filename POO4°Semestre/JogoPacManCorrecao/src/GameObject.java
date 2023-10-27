@@ -1,4 +1,4 @@
-public class GameObject {
+public class GameObject{
 
     private int x;
     private int y;
@@ -17,8 +17,8 @@ public class GameObject {
     }
 
     public void setX(int x) {
-        if(x >= 0)
-        this.x = x;
+        if(x >= 0 && x <= screenSize)
+            this.x = x;
     }
 
     public int getY() {
@@ -26,8 +26,8 @@ public class GameObject {
     }
 
     public void setY(int y) {
-        if(y <= 0)
-        this.y = y;
+        if(y <= 0 && y <= screenSize)
+            this.y = y;
     }
 
     public int getScreenSize() {

@@ -1,3 +1,4 @@
+
 public class Player extends GameObject{
 
 
@@ -11,8 +12,8 @@ public class Player extends GameObject{
 
     }
 
-    public Player(int X, int Y, int Direction) {
-        super(X, Y);
+    public Player(int x, int y, int Direction) {
+        super(x, y);
         Direction = Direction;
     }
 
