@@ -1,0 +1,29 @@
+package com.example;
+
+public class Carta {
+
+    private int numero;
+    private Naipe naipe;
+
+
+    public Carta(int num, Naipe[] naipe) {
+        this.numero = numero;
+        this.naipe = naipe;
+    }
+
+
+
+    public String imagePath(){
+        return "classic-cards/" + numero + this.naipe + ".png";
+//        vai dar erro por aqui
+    }
+
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public Naipe getNaipe() {
+        return naipe;
+    }
+}

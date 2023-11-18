@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Epic Task</h1>
+
+    <a href="/task/new" class="btn">nova tarefa</a>
+
+    <div class="content">
+        <div class="tasks">
+            <div class="card-task" th:each="task : ${tasks}"></div>
+<!--            each serve para fazer o foreach, após isso informa o objeto e qual o array-->
+            <h2 th:text="${task.title}"></h2>
+            <p th:text="${task.description}"></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+<!--Aqui é onde fica a página que é mostrada ao usuário-->

@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "48cd6f8649c2a34d",
+    "type": "split",
+    "children": [
+      {
+        "id": "c49633f59295fb3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe2f317ca5100f7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ThymeLeaf E SpringBoot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "effbc895c80df467",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccc3f8d701b276de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4198d9f60cd8fe6c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "27d31f04cd85ceae",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1b7d75d3a1b57197",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c39da75387e35500",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aa1c80fe53c02c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6aa365fd4dd7042",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ThymeLeaf E SpringBoot.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "63e58b81dbd4449c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ThymeLeaf E SpringBoot.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "06908a6e32efb418",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9ca5906904967254",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ThymeLeaf E SpringBoot.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "fe2f317ca5100f7b",
+  "lastOpenFiles": [
+    "ThymeLeaf E SpringBoot.md"
+  ]
+}
