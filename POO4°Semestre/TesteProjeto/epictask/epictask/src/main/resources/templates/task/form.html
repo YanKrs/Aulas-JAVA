@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+
+</head>
+    <body>
+
+    <header>
+        <nav class="nav">
+            <h1>BancIdeal</h1>
+            <div class="spans">
+                <span class="texto-nav"><a href="/task">Home</a></span>
+                <span class="traco"></span>
+                <span class="texto-nav"><a href="/task/new">Novo Cadastro</a></span>
+                <span class="traco"></span>
+                <span class="texto-nav">Sobre nós</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-section">
+
+                <div class="container-texto">
+                    <h2>Cadastre-se</h2>
+                    <p>Crie sua conta no melhor banco do Senac</p>
+                </div>
+
+                <div class="container-input">
+
+                    <form th:action="${'/task/new'}" method="post" th:object="${task}">
+
+
+                    <input type="text" th:field="*{title}" class="campo" placeholder="Nome">
+                        <span th:errors="*{title}"></span>
+
+                    <textarea th:field="*{description}"  class="campo" placeholder="CPF"></textarea>
+                        <span th:errors="*{description}"></span>
+
+
+                    <input type="number" th:field="*{score}" class="campo" placeholder="Idade">
+                        <span th:errors="*{score}"></span>
+
+                      <div class="actions">
+                        <a href="/task" class="btn">cancelar</a>
+                        <button class="btn blue">Salvar</button>
+                      </div>
+
+
+
+                      </form>
+            </div>
+    </section>
+
+</body>
+</html>
+
+<!--Aqui é onde fica a página que é mostrada ao usuário-->

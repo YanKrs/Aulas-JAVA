@@ -13,10 +13,17 @@
 
     <div class="content">
         <div class="tasks">
-            <div class="card-task" th:each="task : ${tasks}"></div>
-<!--            each serve para fazer o foreach, após isso informa o objeto e qual o array-->
-            <h2 th:text="${task.title}"></h2>
-            <p th:text="${task.description}"></p>
+            <div class="card-task" th:each="task : ${tasks}">
+        <!--            each serve para fazer o foreach, após isso informa o objeto e qual o array-->
+                    <h2 th:text="${task.title}"></h2>
+                    <p th:text="${task.description}">
+                <div class="action">
+                <form th:action="@{'/task/{id}'(id=${task.id})}" th:method="delete">
+                    <button class="btn red">Apagar</button>
+
+                </form>
+            </div>
+            </div>
         </div>
     </div>
 
